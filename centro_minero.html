@@ -485,6 +485,7 @@
             <div class="ambiente-selector">
                 <select id="ambienteSelect" onchange="cambiarAmbiente()">
                     <option value="sistemas">💻 Laboratorio de Sistemas</option>
+                    <option value="G3_Sistemas">💻 Aula G3 - Sistemas</option>
                     <option value="quimica">🧪 Laboratorio de Química Aplicada</option>
                     <option value="carbones">⚫ Laboratorio de Carbones</option>
                     <option value="biotecnologia">🧬 Laboratorio de Biotecnología</option>
@@ -624,7 +625,7 @@
             "22222222": {
                 nombre: "Ana Visitante",
                 tipo: "visitante",
-                areas_permitidas: ["sistemas"],
+                areas_permitidas: ["sistemas","G3_Sistemas"],
                 activo: true
             },
             "99999999": {
@@ -705,11 +706,17 @@
                 protocolo: "💻 Prohibido ingresar líquidos cerca de equipos. Usar credenciales de red asignadas. No modificar configuraciones sin autorización.",
                 riesgo: "bajo"
             },
+            G3_Sistemas:{
+                nombre: "Aula G3 - Sistemas",
+                protocolo: "💻 Prohibido ingresar líquidos cerca de equipos. Usar credenciales de red asignadas. No modificar configuraciones sin autorización.",
+                riesgo: "bajo"
+            },
             minas_didacticas: {
                 nombre: "Minas Didácticas",
                 protocolo: "🚨 RIESGO EXTREMO: Casco minero, botas especializadas, chaleco reflectivo, lámpara minera, detector de gases, arnés de seguridad OBLIGATORIOS. Instructor especializado y protocolo de emergencia activo.",
                 riesgo: "muy_alto"
             }
+
         };
 
         let ambienteActual = "sistemas";
